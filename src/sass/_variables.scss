@@ -1,0 +1,26 @@
+$jumbotron-bg: rgba(99, 73, 73, 0.7);
+$border-radius: 28px;
+$border-radius-lg: 28px;
+$border-radius-sm: 28px;
+
+$primary: #f4623a;
+$secondary: #b5c4d1;
+// $light: #fff;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  //   "light": $light
+);
+$text-color: $secondary;
+$font-family-sans-serif: "Merriweather Sans", sans-serif;
+$font-family-base: $font-family-sans-serif;
+$link-color: $secondary;
+$btn-font-family: $font-family-base;
+$btn-font-family: $font-family-base;
+$bg-primary: $primary;
+$btn-light: #fff;
+$nav-pills-link-active-bg: transparent;
+$navbar-light-active-color: $primary;
+$navbar-light-color: #000;
+$navbar-light-brand-color: #000;

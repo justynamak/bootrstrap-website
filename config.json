@@ -1,0 +1,12 @@
+{
+  "google-fonts-plugin": {
+    "fonts": [
+      {
+        "family": "Merriweather Sans",
+        "variants": ["300", "400", "700"],
+        "subsets": ["latin"]
+      }
+    ],
+    "formats": ["woff", "woff2", "ttf", "eot"]
+  }
+}

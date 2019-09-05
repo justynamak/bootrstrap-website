@@ -1,0 +1,23 @@
+.header {
+  position: relative;
+}
+.bg-header {
+  background: url("../assets/bg-masthead.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-position: center 60%;
+  background-size: cover;
+}
+.navbar {
+  transition: 0.1s all linear;
+}
+.navbar-scrolled {
+  background: #fff;
+  color: #000;
+}
+.jumbotron-text {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
