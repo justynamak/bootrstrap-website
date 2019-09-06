@@ -1,4 +1,5 @@
 import "../sass/main.scss";
+import Gallery from "./Gallery";
 import "jquery/dist/jquery.min.js";
 import "popper.js/dist/popper.min";
 import $ from "jquery";
@@ -9,6 +10,7 @@ import "bootstrap/dist/js/bootstrap.min.js";
 $(document).ready(function($) {
   const that = $(window);
   const navbar = $("#navBar");
+  const photos = $(".gallery-item");
 
   that.on("scroll", function() {
     if (that.scrollTop() < 50) {
@@ -18,4 +20,7 @@ $(document).ready(function($) {
     }
   });
   $("body").scrollspy({ target: "#navBar" });
+
+  const gallery = new Gallery();
+  photos.on("click", e => gallery.handleClick(e));
 });

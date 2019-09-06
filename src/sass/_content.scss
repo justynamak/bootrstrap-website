@@ -1,5 +1,7 @@
 body {
   position: relative;
+  overflow: visible;
+  overflow-x: hidden;
 }
 
 .section {
@@ -9,25 +11,4 @@ body {
   min-width: 3rem;
   max-width: 3.5rem;
   border: 2px solid $primary;
-}
-gallery-item {
-  position: relative;
-}
-.gallery-item-caption {
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: $bg-primary;
-  opacity: 0;
-  transition: 0.5s all ease-in-out;
-}
-.gallery-item-caption:hover {
-  opacity: 0.85;
-}
-// .js-active-trigger {
-//   background: transparent;
-//   color: $primary;
-// }
-nav.nav-link.active {
-  color: $primary;
 }
