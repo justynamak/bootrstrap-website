@@ -1,18 +1,17 @@
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const minify = require("html-minifier").minify;
 const $ = require("jquery");
 
-// global.jQuery = global.$ = require("jquery");
-// const popperjs = require("popper.js");
-// const bootstrap = require("bootstrap");
 const GoogleFontsPlugin = require("google-fonts-plugin");
 
 module.exports = {
   entry: "./src/js/index.js",
+  mode: "production",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js"
@@ -67,6 +66,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].css"
     }),
-    new GoogleFontsPlugin("./config.json")
+    new GoogleFontsPlugin("./config.json"),
+    new CopyPlugin([{ from: "./src/assets", to: "dist/assets" }])
   ]
 };
