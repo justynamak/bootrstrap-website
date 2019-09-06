@@ -67,6 +67,6 @@ module.exports = {
       filename: "[name].css"
     }),
     new GoogleFontsPlugin("./config.json"),
-    new CopyPlugin([{ from: "./src/assets", to: "dist/assets" }])
+    new CopyPlugin([{ from: "./src/assets", to: "/assets" }])
   ]
 };
