@@ -47,7 +47,7 @@ class Gallery {
     this.imgFullSize.css({ opacity: 0.75 });
     setTimeout(() => {
       this.imgFullSize.css({ opacity: 1 });
-      this.imgFullSize.attr("src", `./src/assets/${this.activeId}.jpg`);
+      this.imgFullSize.attr("src", `./assets/${this.activeId}.jpg`);
     }, 500);
   }
   showGallery() {
