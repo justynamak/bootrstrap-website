@@ -5,6 +5,11 @@
         "family": "Merriweather Sans",
         "variants": ["300", "400", "700"],
         "subsets": ["latin"]
+      },
+      {
+        "family": "Tangerine",
+        "variants": ["400"],
+        "subsets": ["latin"]
       }
     ],
     "formats": ["woff", "woff2", "ttf", "eot"]
