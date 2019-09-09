@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  min-height: 500px;
 }
 .bg-header {
   background: url("../assets/bg-masthead.jpg");
@@ -17,7 +18,19 @@
   background: #fff;
   color: #000;
 }
+
 .jumbotron-text {
   font-size: 1.15rem;
   font-weight: 400;
+
+  @media all and (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+.jumbotron-heading {
+  font-size: 3rem;
+
+  @media all and (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 }
