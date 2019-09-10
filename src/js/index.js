@@ -1,3 +1,9 @@
+import "jquery/dist/jquery.min.js";
+import "popper.js/dist/popper.min";
+import $ from "jquery";
+import "@fortawesome/fontawesome-free/js/all";
+import "bootstrap/dist/js/bootstrap.min.js";
+
 import "../sass/main.scss";
 import img1 from "../assets/1.jpg";
 import img2 from "../assets/2.jpg";
@@ -7,12 +13,6 @@ import img5 from "../assets/5.jpg";
 import img6 from "../assets/6.jpg";
 import Gallery from "./Gallery";
 import Random from "./Random";
-
-import "jquery/dist/jquery.min.js";
-import "popper.js/dist/popper.min";
-import $ from "jquery";
-import "@fortawesome/fontawesome-free/js/all";
-import "bootstrap/dist/js/bootstrap.min.js";
 
 $(document).ready(function($) {
   const that = $(window);
