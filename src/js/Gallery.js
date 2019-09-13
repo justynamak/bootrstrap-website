@@ -41,7 +41,7 @@ class Gallery {
   closeGallery() {
     this.isActive = false;
     this.gallerySelector.fadeToggle("slow");
-    $(document.body).css({ overflow: "auto" });
+    $(document.body).toggleClass("overflow-hidden");
   }
   replaceSrc() {
     this.imgFullSize.css({ opacity: 0.75 });
@@ -53,7 +53,7 @@ class Gallery {
   showGallery() {
     this.isActive = true;
     this.gallerySelector.fadeToggle("slow");
-    $(document.body).css({ overflow: "hidden" });
+    $(document.body).toggleClass("overflow-hidden");
   }
   handleClick(e) {
     e.preventDefault();
@@ -63,7 +63,6 @@ class Gallery {
   }
   handleKeyDown(e) {
     if (this.isActive) {
-      console.log(e.keyCode);
       if (e.keyCode === "37") this.prevSlide();
       else if (e.keyCode === "38") this.nextSlide();
     }

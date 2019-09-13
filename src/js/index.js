@@ -13,6 +13,7 @@ import img5 from "../assets/5.jpg";
 import img6 from "../assets/6.jpg";
 import Gallery from "./Gallery";
 import Random from "./Random";
+import Spinner from "./Spinner";
 
 $(document).ready(function($) {
   const that = $(window);
@@ -21,6 +22,11 @@ $(document).ready(function($) {
   const url = "https://jsonplaceholder.typicode.com/comments";
   const random = new Random(url);
   const gallery = new Gallery();
+  const popover = $("#popover");
+  const btnSave = $("#save");
+  const basicModal = $("#basicModal");
+  const basicToast = $("#basicToast");
+  const spinner = new Spinner(basicModal, basicToast);
 
   that.on("scroll", function() {
     if (that.scrollTop() < 50) {
@@ -33,4 +39,7 @@ $(document).ready(function($) {
   random.random();
 
   photos.on("click", e => gallery.handleClick(e));
+  popover.popover();
+  console.log(basicModal);
+  btnSave.on("click", () => spinner.showSpinner());
 });

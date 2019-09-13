@@ -25,6 +25,11 @@
         </div>
       </div>
     </div>
+    <div class="bg-spinner">
+      <div class="spinner-border text-light" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
     <header class="header vh-100">
       <div class="bg-header w-100 h-100"></div>
       <nav
@@ -75,7 +80,14 @@
             Bootstrap framework! Just download a theme and start customizing, no
             strings attached!
           </p>
-          <button class="btn btn-primary py-3 px-4 text-uppercase">
+          <button
+            class="btn btn-primary py-3 px-4 text-uppercase"
+            id="popover"
+            data-toggle="popover"
+            title="Popover title"
+            data-content="And here's some amazing content. It's very engaging. Right?"
+            data-placement="bottom"
+          >
             Find out more
           </button>
         </div>
@@ -94,11 +106,56 @@
                 up and running in no time! Choose one of our open source, free
                 to download, and easy to use themes! No strings attached!
               </p>
-              <button class="btn btn-light py-3 px-4 text-uppercase">
-                Get started!
+              <button
+                class="btn btn-light py-3 px-4 text-uppercase"
+                data-toggle="modal"
+                data-target="#basicModal"
+              >
+                Show modal Bootstrap!
               </button>
+              <div
+                class="modal fade"
+                id="basicModal"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="basicModalTitle"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="basicModalTitle">
+                        This is a basic title!
+                      </h5>
+                      <button
+                        type="button"
+                        class="close"
+                        data-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p class="text-muted text-left">This is a basic modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary" id="save">
+                        Save changes
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>             
             </div>
-          </div>
+          </div>        
         </div>
       </section>
       <section class="section" id="servieces">
@@ -296,6 +353,36 @@
           </div>
         </div>
       </section>
+      <div
+      aria-live="polite"
+      aria-atomic="true"
+      style="position: fixed; min-height: 200px; bottom: 0; right: 0;"
+    >
+      <div
+        class="toast custom-toast"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+        id="basicToast"
+        style="min-width: 300px"
+      >
+        <div class="toast-header">
+          <strong class="mr-auto">Toast</strong>
+          <small>11 mins ago</small>
+          <button
+            type="button"
+            class="ml-2 mb-1 close"
+            data-dismiss="toast"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="toast-body">
+          Succesfully saved!
+        </div>
+      </div>
+    </div>
     </main>
     <footer class="text-muted text-center bg-light mb-0">
       <div class="container">
