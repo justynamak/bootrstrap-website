@@ -23,7 +23,7 @@ class Spinner {
       this.active = true;
       $(this.spinner).addClass("bg-spinner--visible");
       this.toggleOverflow();
-      this.wait(3000);
+      this.wait(2000);
     }
   }
   hideSpinner() {

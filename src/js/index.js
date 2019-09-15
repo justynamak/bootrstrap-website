@@ -14,6 +14,7 @@ import img6 from "../assets/6.jpg";
 import Gallery from "./Gallery";
 import Random from "./Random";
 import Spinner from "./Spinner";
+import validationForm from "./validation-form";
 
 $(document).ready(function($) {
   const that = $(window);
@@ -40,6 +41,8 @@ $(document).ready(function($) {
 
   photos.on("click", e => gallery.handleClick(e));
   popover.popover();
-  console.log(basicModal);
+
   btnSave.on("click", () => spinner.showSpinner());
+
+  validationForm();
 });

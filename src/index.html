@@ -319,36 +319,71 @@
           </p>
         </div>
       </section>
-      <section class="section text-center" id="contact">
+      <section class="section" id="contact">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-8">
-              <h2>Let's Get In Touch!</h2>
-              <hr class="divider mx-auto my-3 w-20" />
-              <p class="text-muted my-4">
-                Ready to start your next project with us? Give us a call or send
-                us an email and we will get back to you as soon as possible!
-              </p>
-              <div class="row">
-                <div class="col-md-6 mt-4">
-                  <i class="fas fa-phone fa-3x text-muted mb-3"></i>
-                  <address>
-                    <a class="text-dark" href="tel:+1 (202) 555-0149"
-                      >+1 (202) 555-0149</a
-                    >
-                  </address>
-                </div>
-                <div class="col-md-6 mt-4">
-                  <i class="fas fa-envelope fa-3x text-muted mb-3"></i>
-                  <address>
-                    <a
-                      class="text-primary"
-                      href="mailto:contact@yourwebsite.com"
-                      >contact@yourwebsite.com</a
-                    >
-                  </address>
-                </div>
+              <div class="text-center">
+                <h2>Let's Get In Touch!</h2>
+                <hr class="divider mx-auto my-3 w-20" />
+                <p class="text-muted my-4">
+                  Ready to start your next project with us? Give us a call or send
+                  us an email and we will get back to you as soon as possible!
+                </p>
+                <div class="row">
+                  <div class="col-md-6 mt-4">
+                    <i class="fas fa-phone fa-3x text-muted mb-3"></i>
+                    <address>
+                      <a class="text-dark" href="tel:+1 (202) 555-0149"
+                        >+1 (202) 555-0149</a
+                      >
+                    </address>
+                  </div>
+                  <div class="col-md-6 mt-4">
+                    <i class="fas fa-envelope fa-3x text-muted mb-3"></i>
+                    <address>
+                      <a
+                        class="text-primary"
+                        href="mailto:contact@yourwebsite.com"
+                        >contact@yourwebsite.com</a
+                      >
+                    </address>
+                  </div>
               </div>
+              </div>
+              <form class="needs-validation mt-5" novalidate>
+                <fieldset>
+                    <legend class="text-muted mt-4">Contact us</legend>
+                  <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                      <label for="firstName">First name</label>
+                      <input type="text" class="form-control" id="firstName" placeholder="First name" required>
+                      <div class="valid-feedback">Looks good!</div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="lastName">Last name</label>
+                      <input type="text" class="form-control" id="lastName" placeholder="Last name" required>
+                      <div class="valid-feedback">Look good!</div>
+                    </div>                  
+                      <label for="username">Username</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroupText">@</span>
+                        </div>
+                        <input type="text" class="form-control" id="username" placeholder="Username" aria-describedby="inputGroupText" required>
+                        <div class="invalid-feedback">Please, choose a username</div>             
+                    </div>
+                    <div class="form-group mt-4">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" value="" id="invalidCheck" required>
+                        <label for="invalidCheck" class="custom-control-label">Agree for terms and conditions</label>
+                        <div class="invalid-feedback">You must agree before submitting.</div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary" type="submit">Submit</button>
+                </fieldset>
+              </form>
             </div>
           </div>
         </div>
